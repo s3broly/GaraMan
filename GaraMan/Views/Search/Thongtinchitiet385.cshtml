@@ -5,14 +5,36 @@
 @if (Model.IsDichvu)
 {
     <h3>Chi tiết dịch vụ</h3>
-    <p><strong>Tên:</strong> @Model.Dichvu.Name</p>
-    <p><strong>Chi phí:</strong> @Model.Dichvu.Cost</p>
-    <p><strong>Ghi chú:</strong> @Model.Dichvu.Note</p>
+    <table style="border-collapse: collapse; width: 100%;">
+        <tr>
+            <td style="border: 1px solid black;"><strong>Tên:</strong></td>
+            <td style="border: 1px solid black;">@Model.Dichvu.Name</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;"><strong>Chi phí:</strong></td>
+            <td style="border: 1px solid black;">@Model.Dichvu.Cost</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;"><strong>Ghi chú:</strong></td>
+            <td style="border: 1px solid black;">@Model.Dichvu.Note</td>
+        </tr>
+    </table>
 }
 else
 {
     <h3>Chi tiết phụ tùng</h3>
-    <p><strong>Tên:</strong> @Model.Phutung.Name</p>
-    <p><strong>Chi phí:</strong> @Model.Phutung.Cost</p>
-    <p><strong>Ghi chú:</strong> @Model.Phutung.Note</p>
+    <table style="border-collapse: collapse; width: 100%;">
+        <tr>
+            <td style="border: 1px solid black;"><strong>Tên:</strong></td>
+            <td style="border: 1px solid black;">@Model.Phutung.Name</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;"><strong>Chi phí:</strong></td>
+            <td style="border: 1px solid black;">@Model.Phutung.Cost</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;"><strong>Ghi chú:</strong></td>
+            <td style="border: 1px solid black;">@Model.Phutung.Note</td>
+        </tr>
+    </table>
 }

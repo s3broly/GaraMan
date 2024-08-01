@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Tìm kiếm";
+}
+
+<h2>Tìm kiếm dịch vụ/phụ tùng</h2>
+
+<form asp-action="Search" method="post">
+    <input type="text" name="searchTerm" placeholder="Nhập tên dịch vụ/phụ tùng" required />
+    <button type="submit">Tìm kiếm</button>
+</form>

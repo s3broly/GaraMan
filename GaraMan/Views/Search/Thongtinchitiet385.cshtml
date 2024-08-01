@@ -1,0 +1,18 @@
+﻿@model DetailViewModel
+
+<h2>Chi tiết</h2>
+
+@if (Model.IsDichvu)
+{
+    <h3>Chi tiết dịch vụ</h3>
+    <p><strong>Tên:</strong> @Model.Dichvu.Name</p>
+    <p><strong>Chi phí:</strong> @Model.Dichvu.Cost</p>
+    <p><strong>Ghi chú:</strong> @Model.Dichvu.Note</p>
+}
+else
+{
+    <h3>Chi tiết phụ tùng</h3>
+    <p><strong>Tên:</strong> @Model.Phutung.Name</p>
+    <p><strong>Chi phí:</strong> @Model.Phutung.Cost</p>
+    <p><strong>Ghi chú:</strong> @Model.Phutung.Note</p>
+}

@@ -1,0 +1,27 @@
+﻿@model SearchViewModel
+
+<h2>Kết quả tìm kiếm</h2>
+
+<h3>Dịch vụ</h3>
+<ul>
+    @foreach (var dichvu in Model.DichvuResults)
+    {
+        <li>
+            <a asp-action="Thongtinchitiet385" asp-route-id="@dichvu.Id" asp-route-isDichvu="true">
+                @dichvu.Name
+            </a>
+        </li>
+    }
+</ul>
+
+<h3>Phụ tùng</h3>
+<ul>
+    @foreach (var phutung in Model.PhutungResults)
+    {
+        <li>
+            <a asp-action="Thongtinchitiet385" asp-route-id="@phutung.Id" asp-route-isDichvu="false">
+                @phutung.Name
+            </a>
+        </li>
+    }
+</ul>
